@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+    <snippet>
+        <key>a</key>
+        <body>&lt;a href="${1:http://${2:}}"&gt;${3:${%1}}&lt;/a&gt;${0}</body>
+        <name>Insert a Link</name>
+    </snippet>
+
+    <snippet>
+        <key>mailto</key>
+        <body>&lt;a href="mailto:${1:joe@example.com}?subject=${2:feedback}"&gt;${3:email me}&lt;/a&gt;${0}</body>
+        <name>Insert a Email Link</name>
+    </snippet>
+    
+    <snippet> 
+        <key>div</key>
+        <body>&lt;div ${1:id="${2:name}"}&gt;
+    	${0}
+    &lt;/div&gt;</body>
+        <name>Insert &lt;div&gt;</name>
+    </snippet>
+
+    <snippet>
+        <key>p</key>
+        <body>&lt;p&gt;${1:}&lt;/p&gt;${0}</body>
+        <name>Insert &lt;p&gt;</name>
+    </snippet>
+    
+    <snippet>
+        <key>h</key>
+        <body>&lt;h${1:1}&gt;${2:}&lt;/h${%1}&gt;${0}</body>
+        <name>Insert Header Tag</name>
+     </snippet>
+    
+</snippets>

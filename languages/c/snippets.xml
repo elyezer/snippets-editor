@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+    <snippet>
+        <key>inc</key>
+        <body>#include "${1:}.h"${0}</body>
+        <name>Include local library</name>
+    </snippet>
+    
+    <snippet>
+        <key>inc</key>
+        <body>#include &lt;${1:}.h&gt;${0}</body>
+        <name>Include default library</name>
+    </snippet>
+    
+    <snippet>
+        <key>for</key>
+        <body>for (${1:}; ${2:}; ${3:${%1/^\w+/$%++}}) {
+	${0}
+}</body>
+        <name>For Loop</name>
+    </snippet>
+    
+	<snippet>
+	    <key>while</key>
+	    <body>while (${1:}) {
+	${0}
+}</body>
+        <name>While Loop</name>
+	</snippet>
+	
+	<snippet>
+    	<key>do</key>
+    	<body>do {
+	${0}
+} while(${1:});</body>
+        <name>Do-While Loop</name>
+    </snippet>
+    
+	<snippet>
+	    <key>func</key>
+	    <body>${1:void} ${2:func_name}(${3:params})
+{
+	${0}
+	${%1/^int|float|char|double|unsigned|long/return }
+}</body>
+        <name>Function</name>
+    </snippet>
+
+	<snippet>
+	    <key>main</key>
+	    <body>int main(int argc, char *argv[])
+{
+	${1:}
+}</body>
+        <name>Main</name>
+    </snippet>
+</snippets>

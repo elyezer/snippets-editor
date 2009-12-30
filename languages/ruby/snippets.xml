@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+
+	<snippet>
+	    <key>for</key>
+	    <body>for ${1:variable} in ${2:list}
+	${0}
+end</body>
+	    <name>Loop: for</name>
+	</snippet>
+
+	<snippet>
+    	<key>init</key>
+    	<body>def initialize(${1:params})
+	${%1/\w+/@$% = $%\n}${0}
+end</body>
+    	<name>Constructor</name>
+	</snippet>
+	
+	<snippet>
+    	<key>def</key>
+    	<body>def ${1:method}(${2:})
+	${0}
+end</body>
+		<name>Function Definition</name>
+	</snippet>
+		
+	<snippet>
+		<key>class</key>
+		<body>class ${1:ClassName}
+	def initialize(${2:params}):
+		${%2/\w+/@$% = $%\n}${0}
+end</body>
+		<name>New Class</name>
+	</snippet>
+		
+	<snippet>
+		<key>begin</key>
+		<body>begin
+	${1:pass}
+rescue ${2:Exception} => ${3:e}
+	${4:raise ${%3}}
+end</body>
+		<name>Begin/Rescue</name>
+	</snippet>
+	
+	<snippet>
+		<key>begin</key>
+		<body>begin
+	${1:pass}
+rescue ${2:Exception} => ${3:e}
+	${4:raise ${%3}}
+ensure
+	${5:pass}
+end</body>
+		<name>Begin/Rescure/Ensure</name>
+	</snippet>
+	
+	<snippet>
+		<key>begin</key>
+		<body>begin
+	${1:pass}
+rescue ${2:Exception} => ${3:e}
+	${4:raise ${%3}}
+else
+	${5:pass}
+ensure
+    ${6:pass}
+end</body>
+		<name>Begin/Rescure/Else/Ensure</name>
+	</snippet>
+	
+</snippets>
+

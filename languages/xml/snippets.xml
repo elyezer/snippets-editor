@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+    <snippet>
+        <key>&lt;</key>
+        <body>&lt;${1:tag}&gt;${0}&lt;/${%1}&gt;</body>
+        <name>Insert Tag</name>
+    </snippet>
+    
+    <snippet>
+        <key>&gt;</key>
+        <body>&lt;${1:tag} /&gt;${0}</body>
+        <name>Insert Short Tag</name>
+    </snippet>
+    
+    <snippet>
+        <key>&lt;a</key>
+        <body>&lt;${1:tag} ${2:attr}="${3:}"&gt;${0}&lt;/${%1}&gt;</body>
+        <name>Insert Short Tag</name>
+    </snippet>
+    
+</snippets>
